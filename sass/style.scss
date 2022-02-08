@@ -6,8 +6,8 @@ body {
     background: #B8B9CC;
   }
 main{
-    width: 80%;
-    height: 90%;
+    width: 60%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
@@ -31,9 +31,42 @@ main{
  }
 
  .container-form{
-     width: 60%;
+     width: 70%;
      height: 80%;
      margin-top: 5%;
+     margin-left: 18%;
      background: #fff;
      border-radius: 18px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
+
+ form{
+     width: 80%;
+     height: 100%;
+ }
+
+ input[type=text], textarea{
+     display: flex;
+     width: 100%;
+     padding: 15px;
+     border-radius: 8px;
+     color: white;
+     border: 1px solid #E0E0E8;
+     box-sizing: border-box;
+ }
+//  input[type=text]{
+//      margin-top: 50px;
+//  }
+ label{
+     display: inline-block;
+     margin-top: 10%;
+     margin-bottom: 5px;
+ }
+
+ .message{
+     height: 30%;
+ }
+
+ 
