@@ -20,11 +20,32 @@ main {
 }
 
 h1 {
+  font-size: 2.5em;
   color: #fff;
 }
 
-p {
+h4 {
   color: #fff;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 500;
+  color: #fff;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+i {
+  font-size: 2em;
+}
+
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+  color: #F4620F;
 }
 
 .partie-contact {
@@ -56,6 +77,24 @@ p {
 .container-contact {
   width: 70%;
   height: 80%;
+}
+.container-contact .coord, .container-contact .rsx {
+  margin-top: 20%;
+}
+.container-contact .rsx {
+  display: flex;
+}
+
+.coord {
+  background: black;
+}
+
+.fa-phone {
+  color: #fff;
+}
+
+.fa-solid {
+  font-family: "Murecho", sans-serif;
 }
 
 form {
@@ -176,6 +215,37 @@ form button {
 
 .css-button-shadow-border-sliding--red:active {
   top: 2px;
+}
+
+.rsx {
+  width: 100%;
+  height: 15%;
+}
+.rsx .circle-f {
+  width: 18%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: none;
+}
+
+.circle-t {
+  background-color: none;
+  width: 18%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circle-i {
+  width: 18%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: none;
+}
+
+.circle-f, .circle-t, .circle-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
