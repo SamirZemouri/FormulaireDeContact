@@ -2,29 +2,47 @@
     main{
         width: 50%;
         height: 100%;
+        flex-wrap: nowrap;
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        background-color: #FBAB7E; background-image: linear-gradient(225deg, #ED712B 33%, #F7CE68 100%);
     }
     .partie-contact{
         width: 100%;
-        height: 60%;
+        height: 40%;
     }
     .container-contact{
         justify-content: center;
         text-align: center;
     }
+    .container-form{
+        height: 100%;
+    }
+    .container-contact .coord, .container-contact .rsx {
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 3.5em;
+    }
     h4{
+        font-size: 1.2em;
         width: 100%;
+    }
+    form button{
+        margin-top: 10%;
     }
     .partie-formulaire{
         align-items: baseline;
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
     .rsx{
         order: 1;
-        height: 20%;
+        width: 100%;
+    
+    }
+    .rsx1{
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -33,29 +51,45 @@
 
 
 
+
+
 @media screen and (max-device-width : 900px){
     main{
         width: 100%;
         height: 100%;
-        flex-direction: column;
         align-items: center;
-        background-color: red;
     }
     .partie.contact{
-        order: 2;
         height: 100% ;
 
     }
     .partie-formulaire {
-        order: 3;
-        width: 50%;
+        width: 100%;
+    }
+    .container-form{
+        width: 60%;
+        height: 100%;
     }
 
     .rsx{
-        height: 25%;
+        width: 100%;
+        height: 10%;
         order: 1;
-        display: none;
     }
+    .rsx1{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-device-width : 510px){
+
+
+
+
 
 
 }
