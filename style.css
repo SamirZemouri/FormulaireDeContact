@@ -119,7 +119,7 @@ form {
 input[type=text] {
   display: flex;
   width: 100%;
-  padding: 10px;
+  padding: 5%;
   padding-left: 40px;
   border-radius: 8px;
   color: black;
@@ -284,6 +284,7 @@ form button {
   }
 
   .container-contact {
+    width: 100%;
     justify-content: center;
     text-align: center;
   }
@@ -306,7 +307,7 @@ form button {
   }
 
   form button {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .partie-formulaire {
@@ -330,9 +331,10 @@ form button {
     width: 100%;
     height: 100%;
     align-items: center;
+    border-radius: 0;
   }
 
-  .partie.contact {
+  .partiecontact {
     height: 100%;
   }
 
@@ -355,6 +357,41 @@ form button {
     height: 100%;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-device-width: 510px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .partie-contact {
+    height: 40%;
+  }
+
+  .container-contact {
+    width: 70%;
+  }
+
+  .partie-formulaire {
+    width: 100%;
+    height: 70%;
+  }
+
+  .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+  }
+
+  .rsx {
+    height: 10%;
   }
 }
 
