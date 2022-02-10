@@ -1,6 +1,6 @@
-@import url(_media.scss);
 body {
-  height: 90vh;
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,9 @@ main {
   width: 70%;
   height: 80%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin: 0;
   background-color: #FBAB7E;
   background-image: linear-gradient(270deg, #ED712B 33%, #F7CE68 100%);
   border-radius: 13px;
@@ -47,7 +48,7 @@ a {
 }
 
 i {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
@@ -56,7 +57,7 @@ i {
 
 .partie-contact {
   width: 50%;
-  height: 100%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,26 +232,33 @@ form button {
 }
 
 .rsx {
-  width: 100%;
-  height: 15%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 10%;
 }
 .rsx .circle-f {
-  width: 18%;
-  height: 100%;
+  width: 20%;
+  height: 95%;
   border-radius: 50%;
   background-color: none;
+}
+
+.rsx1 {
+  width: 70%;
+  display: flex;
 }
 
 .circle-t {
   background-color: none;
-  width: 18%;
-  height: 100%;
+  width: 20%;
+  height: 95%;
   border-radius: 50%;
 }
 
 .circle-i {
-  width: 18%;
-  height: 100%;
+  width: 20%;
+  height: 95%;
   border-radius: 50%;
   background-color: none;
 }
@@ -259,6 +267,66 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-device-width: 1350px) {
+  main {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partie-contact {
+    width: 100%;
+    height: 60%;
+  }
+
+  .container-contact {
+    justify-content: center;
+    text-align: center;
+  }
+
+  h4 {
+    width: 100%;
+  }
+
+  .partie-formulaire {
+    align-items: baseline;
+    width: 100%;
+    height: 60%;
+  }
+
+  .rsx {
+    order: 1;
+    height: 20%;
+  }
+}
+@media screen and (max-device-width: 900px) {
+  main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+  }
+
+  .partie.contact {
+    order: 2;
+    height: 100%;
+  }
+
+  .partie-formulaire {
+    order: 3;
+    width: 50%;
+  }
+
+  .rsx {
+    height: 25%;
+    order: 1;
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

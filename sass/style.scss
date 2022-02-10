@@ -1,5 +1,6 @@
 body {
-    height: 90vh;
+    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,8 +12,9 @@ main{
     width: 70%;
     height: 80%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin: 0;
     background-color: #FBAB7E; background-image: linear-gradient(270deg, #ED712B 33%, #F7CE68 100%);
     border-radius: 13px;
  }
@@ -40,7 +42,7 @@ main{
      color: #fff;
  }
  i{
-     font-size: 2em;
+     font-size: 1.7em;
  }
  .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover{
      color:#F4620F;
@@ -50,7 +52,7 @@ main{
 
  .partie-contact{
      width: 50%;
-     height: 100%;
+     height: 70%;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -85,8 +87,7 @@ main{
                 display: flex;
             }
  }
-
-
+ 
 
 .fa-phone{
     color: #fff;
@@ -222,23 +223,31 @@ main{
   }
 
 .rsx{
-    width: 100%;
-    height: 15%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 10%;
   .circle-f{
-    width: 18%;
-    height: 100%;
+    width: 20%;
+    height: 95%;
     border-radius: 50%;
     background-color: none;
   }}
+
+  .rsx1{
+      width: 70%;
+      display: flex;
+  }
   .circle-t{
       background-color: none;
-      width: 18%;
-      height: 100%;
+      width: 20%;
+      height: 95%;
+
       border-radius: 50%;
   }
   .circle-i{
-    width: 18%;
-    height: 100%;
+    width: 20%;
+    height: 95%;
     border-radius: 50%;
     background-color:none;
   }
@@ -249,4 +258,4 @@ main{
       align-items: center;
   }
 
-  @import url(_media.scss);
+  @import './_media'
