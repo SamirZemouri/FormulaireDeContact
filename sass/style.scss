@@ -2,6 +2,7 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     background: #B8B9CC;
@@ -112,6 +113,7 @@ main{
      width: 80%;
      height: 100%;
  }
+ 
 
  input[type=text]{
      display: flex;
@@ -125,6 +127,32 @@ main{
      outline-color: #F4620F;
      font-family: 'Murecho', sans-serif;
  }
+ input[type="email"]{
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    padding-left: 40px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #E0E0E8;
+    box-sizing: border-box;
+    outline-color: #F4620F;
+    font-family: 'Murecho', sans-serif;
+     
+ }
+//  input:invalid{
+//      border-color: red;
+//  }
+//  input:focus:invalid {
+//     outline: none;
+//   }
+ #erreur{
+     margin-left: 35%;
+     background-color: red;
+     color: white;
+     border-radius: 6px;
+ }
+
  .text-nom{
      background: url(/images/iconProfil.png) no-repeat scroll 3%;
  }

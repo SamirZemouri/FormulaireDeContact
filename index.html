@@ -12,7 +12,9 @@
     <title>Formulaire de contact</title>
 </head>
 <body>
+    <span id="erreur" aria-live="polite"></span>
     <main>
+        
         <div class="partie-contact">
             <div class="container-contact">
                 <h1>Contactez-nous</h1>
@@ -45,18 +47,22 @@
 
 
         <div class="partie-formulaire">
+            
             <div class="container-form">
-                <form action="">
+                <form id="inscription" method="post" action="formulaire.php">
                     <label for="nom" class="nom">Votre nom</label>
-                    <input type="text" class="text-nom" >
+                    <input type="text" id="nom" class="text-nom" name="nom"  >
+                    
+                    
 
                     <label for="mail" class="mail">Mail</label>
-                    <input type="text" class="text-mail">
+                    <input type="email" id="mail" class="text-mail" name="mail">
 
-                    <label for="message">Message</label>
-                    <textarea class="message" placeholder="Message..."></textarea>
+                    <label for="msg" >Message</label>
+                    <textarea class="message" id="msg" placeholder="Message..." name="message"></textarea>
 
-                    <button class="css-button-shadow-border-sliding--red ">Envoyer</button>
+                    <button type="submit" id="subbtn" class="css-button-shadow-border-sliding--red" value="submit">Envoyer</button>
+                    <p></p>
                     <!-- <input type="submit" class="btn-envoyer " value="Envoyer"> -->
                 </form>
             </div>

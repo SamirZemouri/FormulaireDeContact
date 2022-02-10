@@ -33,3 +33,53 @@ iconI.addEventListener('mouseenter', e =>{
 iconI.addEventListener('mouseleave', e =>{
     instagramcircle.style.background = 'none';
 })
+
+// let email = document.getElementById("mail")
+
+// email.addEventListener("keyup", function (erreur){
+//     if(email.validity.typeMismatch) {
+//         email.setCustomValidity("Veuillez entrer une adresse e-mail valide")
+//     } else {
+//         email.setCustomValidity("")
+//     }
+// })
+
+
+
+document.getElementById("inscription").addEventListener("submit", function (e){
+    
+    let erreur;
+
+    let inputs = document.getElementsByTagName("input");
+
+    for (let i = 0; i < inputs.length; i++) {
+        if (!inputs[i].value) {
+            erreur = "Veuillez renseigner tous les champs";
+
+        }
+    }
+
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false;
+    } else {
+        alert('formulaire envoyé!');
+    }
+    // let erreur;
+    // let email = document.getElementById("mail");
+    // let email2 = document.getElementById('mail2')
+    // let nom = document.getElementById('nom');
+    // let msg = document.getElementById('msg');
+
+    // if (!nom.value) {
+    //     erreur = "Veuillez renseigner un nom";
+    // }
+    // if (!email.value) {
+    //     erreur = "Veuillez saisir une adresse e-mail valide";
+    // }
+    // if (!msg.value) {
+    //     erreur = "Veuillez renseigner un message"
+    // }
+
+})
