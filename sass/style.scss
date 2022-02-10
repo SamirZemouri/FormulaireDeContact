@@ -18,18 +18,23 @@ main{
  }
 
  h1{
+     margin-top: 0;
      font-size: 2.5em;
      color: #fff;
  }
  h4{
+     width: 70%;
      color: #fff;
      font-weight: 400;
  }
  p{
+     font-size: 1.1em;
     font-weight:500;
+    margin-bottom: 5%;
      color: #fff;
  }
  a{
+     font-size: 1.1em;
      font-weight:500;
      text-decoration: none;
      color: #fff;
@@ -82,9 +87,7 @@ main{
  }
 
 
- .coord{
-     background: black;
- }
+
 .fa-phone{
     color: #fff;
 }
@@ -92,6 +95,16 @@ main{
     font-family: 'Murecho', sans-serif;
 }
 
+.fa-phone, .fa-envelope{
+    font-size: 1.2em;
+    margin-right: 3%;
+}
+
+.fa-location-dot{
+    font-size: 1.2rem;
+    margin-left: 1%;
+    margin-right: 3%;
+}
 
 
  form{
@@ -235,3 +248,5 @@ main{
       justify-content: center;
       align-items: center;
   }
+
+  @import url(_media.scss);
