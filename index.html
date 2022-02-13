@@ -8,11 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Formulaire de contact</title>
 </head>
 <body>
-    <span id="erreur" aria-live="polite"></span>
     <main>
         
         <div class="partie-contact">
@@ -51,23 +50,23 @@
             <div class="container-form">
                 <form id="inscription" method="post" action="formulaire.php">
                     <label for="nom" class="nom">Votre nom</label>
-                    <input type="text" id="nom" class="text-nom" name="nom"  >
+                    <input type="text" id="nom" class="text-nom" name="nom" required >
                     
                     
 
                     <label for="mail" class="mail">Mail</label>
-                    <input type="email" id="mail" class="text-mail" name="mail">
+                    <input type="email" id="mail" class="text-mail" name="mail" required>
 
                     <label for="msg" >Message</label>
                     <textarea class="message" id="msg" placeholder="Message..." name="message"></textarea>
-
-                    <button type="submit" id="subbtn" class="css-button-shadow-border-sliding--red" value="submit">Envoyer</button>
+                    <div class="btn">
+                    <button type="submit" name="valider"  id="subbtn" class="css-button-shadow-border-sliding--red">Envoyer</button>
+                    </div>
                     <p></p>
                     <!-- <input type="submit" class="btn-envoyer " value="Envoyer"> -->
                 </form>
             </div>
         </div>
-
 
 
 
@@ -117,7 +116,7 @@
 
 
 
-    <script src="/Script/script.js"></script>
+    <script src="Script/script.js"></script>
     <script src="https://kit.fontawesome.com/b0ca9b7f50.js" crossorigin="anonymous"></script>
 </body>
 </html>

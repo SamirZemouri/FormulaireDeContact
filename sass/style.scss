@@ -112,6 +112,7 @@ main{
  form{
      width: 80%;
      height: 100%;
+     flex-direction: column;
  }
  
 
@@ -146,12 +147,7 @@ main{
 //  input:focus:invalid {
 //     outline: none;
 //   }
- #erreur{
-     margin-left: 35%;
-     background-color: red;
-     color: white;
-     border-radius: 6px;
- }
+
 
  .text-nom{
      background: url(/images/iconProfil.png) no-repeat scroll 3%;
@@ -204,7 +200,7 @@ main{
   form button{
       width: 40%;
       height: 9%;
-      margin-top: 6%;
+      margin-top: 4%;
       margin-left: 60%;
       font-size: 1.2em;
       font-family: 'Murecho', sans-serif;
@@ -213,7 +209,6 @@ main{
   }
 
   .css-button-shadow-border-sliding--red {
-    min-width: 130px;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
@@ -255,7 +250,7 @@ main{
     justify-content: center;
     height: 10%;
   .circle-f{
-    width: 20%;
+    width: 15%;
     height: 95%;
     border-radius: 50%;
     background-color: none;
@@ -267,13 +262,13 @@ main{
   }
   .circle-t{
       background-color: none;
-      width: 20%;
+      width: 15%;
       height: 95%;
 
       border-radius: 50%;
   }
   .circle-i{
-    width: 20%;
+    width: 15%;
     height: 95%;
     border-radius: 50%;
     background-color:none;

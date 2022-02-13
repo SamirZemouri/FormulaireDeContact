@@ -1,8 +1,7 @@
-@media screen and (max-device-width : 1350px){
+@media screen and (max-device-width : 1100px){
     main{
         width: 50%;
         height: 100%;
-        flex-wrap: nowrap;
         justify-content: center;
         background-color: #FBAB7E; background-image: linear-gradient(225deg, #ED712B 33%, #F7CE68 100%);
     }
@@ -12,21 +11,26 @@
     }
     .container-contact{
         width: 100%;
+        height: 100%;
         justify-content: center;
         text-align: center;
     }
     .container-form{
+        width: 50%;
         height: 100%;
     }
     .container-contact .coord, .container-contact .rsx {
-        margin-top: 10%;
+        margin-top: 0%;
     }
     h1{
-        font-size: 3.5em;
+        font-size: 3em;
     }
     h4{
         font-size: 1.2em;
         width: 100%;
+    }
+    form{
+        flex-direction: column;
     }
     form button{
         margin-top: 5%;
@@ -45,6 +49,12 @@
         justify-content: center;
         align-items: center;
     }
+    .message{
+        height: 20%;
+    }
+    .css-button-shadow-border-sliding--red{
+        min-width: 50%;
+    }
 
 
 }
@@ -61,12 +71,56 @@
         align-items: center;
         border-radius: 0;
     }
-    .partiecontact{
-        height: 100% ;
+    .partie-contact{
+        width: 70%;
+        height: 40% ;
 
     }
     .partie-formulaire {
         width: 100%;
+        height: 50%;
+    }
+    .container-form{
+        width: 40%;
+        height: 100%;
+    }
+
+    .rsx{
+        width: 100%;
+        height: 10%;
+        order: 1;
+    }
+    .rsx1{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .css-button-shadow-border-sliding--red{
+        min-width: 50%;
+    }
+
+
+}
+
+@media screen and (max-device-width : 510px){
+
+    main{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .partie-contact{
+        width: 70%;
+        height: 40% ;
+
+    }
+    .partie-formulaire {
+        width: 100%;
+        height: 50%;
     }
     .container-form{
         width: 60%;
@@ -83,46 +137,57 @@
         justify-content: center;
         align-items: center;
     }
-
+    .css-button-shadow-border-sliding--red{
+        min-width: 50%;
+    }
+    .message{
+        height: 25%;
+    }
 
 }
 
-@media screen and (max-device-width : 510px){
+@media screen and (max-device-width : 340px){
 
-        h1{
-        font-size: 2.5em;
-    }
-    h4{
-        font-size: 1.2em;
+    main{
         width: 100%;
+        height: 100%;
+        align-items: center;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 2em;
     }
     .partie-contact{
+        width: 100%;
         height: 40% ;
 
     }
-    .container-contact {
-        width: 70%;
-    }
     .partie-formulaire {
         width: 100%;
-        height: 70%;
+        height: 50%;
     }
     .container-form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
+        width: 70%;
         height: 100%;
     }
+
     .rsx{
+        width: 100%;
         height: 10%;
+        order: 1;
     }
-
-
-
-
-
-
-
-
+    .rsx1{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .css-button-shadow-border-sliding--red{
+        min-width: 50%;
+    }
+    .container-contact .coord, .container-contact .rsx {
+        margin-top: 15%;
+    }
+    .message{
+        height: 30%;
+    }
 }

@@ -115,6 +115,7 @@ i {
 form {
   width: 80%;
   height: 100%;
+  flex-direction: column;
 }
 
 input[type=text] {
@@ -141,13 +142,6 @@ input[type=email] {
   box-sizing: border-box;
   outline-color: #F4620F;
   font-family: "Murecho", sans-serif;
-}
-
-#erreur {
-  margin-left: 35%;
-  background-color: red;
-  color: white;
-  border-radius: 6px;
 }
 
 .text-nom {
@@ -204,7 +198,7 @@ label {
 form button {
   width: 40%;
   height: 9%;
-  margin-top: 6%;
+  margin-top: 4%;
   margin-left: 60%;
   font-size: 1.2em;
   font-family: "Murecho", sans-serif;
@@ -212,7 +206,6 @@ form button {
 }
 
 .css-button-shadow-border-sliding--red {
-  min-width: 130px;
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
@@ -258,7 +251,7 @@ form button {
   height: 10%;
 }
 .rsx .circle-f {
-  width: 20%;
+  width: 15%;
   height: 95%;
   border-radius: 50%;
   background-color: none;
@@ -271,13 +264,13 @@ form button {
 
 .circle-t {
   background-color: none;
-  width: 20%;
+  width: 15%;
   height: 95%;
   border-radius: 50%;
 }
 
 .circle-i {
-  width: 20%;
+  width: 15%;
   height: 95%;
   border-radius: 50%;
   background-color: none;
@@ -289,11 +282,10 @@ form button {
   align-items: center;
 }
 
-@media screen and (max-device-width: 1350px) {
+@media screen and (max-device-width: 1100px) {
   main {
     width: 50%;
     height: 100%;
-    flex-wrap: nowrap;
     justify-content: center;
     background-color: #FBAB7E;
     background-image: linear-gradient(225deg, #ED712B 33%, #F7CE68 100%);
@@ -306,25 +298,31 @@ form button {
 
   .container-contact {
     width: 100%;
+    height: 100%;
     justify-content: center;
     text-align: center;
   }
 
   .container-form {
+    width: 50%;
     height: 100%;
   }
 
   .container-contact .coord, .container-contact .rsx {
-    margin-top: 10%;
+    margin-top: 0%;
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   h4 {
     font-size: 1.2em;
     width: 100%;
+  }
+
+  form {
+    flex-direction: column;
   }
 
   form button {
@@ -346,6 +344,14 @@ form button {
     justify-content: center;
     align-items: center;
   }
+
+  .message {
+    height: 20%;
+  }
+
+  .css-button-shadow-border-sliding--red {
+    min-width: 50%;
+  }
 }
 @media screen and (max-device-width: 900px) {
   main {
@@ -355,12 +361,57 @@ form button {
     border-radius: 0;
   }
 
-  .partiecontact {
-    height: 100%;
+  .partie-contact {
+    width: 70%;
+    height: 40%;
   }
 
   .partie-formulaire {
     width: 100%;
+    height: 50%;
+  }
+
+  .container-form {
+    width: 40%;
+    height: 100%;
+  }
+
+  .rsx {
+    width: 100%;
+    height: 10%;
+    order: 1;
+  }
+
+  .rsx1 {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .css-button-shadow-border-sliding--red {
+    min-width: 50%;
+  }
+}
+@media screen and (max-device-width: 510px) {
+  main {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .partie-contact {
+    width: 70%;
+    height: 40%;
+  }
+
+  .partie-formulaire {
+    width: 100%;
+    height: 50%;
   }
 
   .container-form {
@@ -379,41 +430,63 @@ form button {
     justify-content: center;
     align-items: center;
   }
-}
-@media screen and (max-device-width: 510px) {
-  h1 {
-    font-size: 2.5em;
+
+  .css-button-shadow-border-sliding--red {
+    min-width: 50%;
   }
 
-  h4 {
-    font-size: 1.2em;
+  .message {
+    height: 25%;
+  }
+}
+@media screen and (max-device-width: 340px) {
+  main {
     width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   .partie-contact {
+    width: 100%;
     height: 40%;
-  }
-
-  .container-contact {
-    width: 70%;
   }
 
   .partie-formulaire {
     width: 100%;
-    height: 70%;
+    height: 50%;
   }
 
   .container-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+    width: 70%;
     height: 100%;
   }
 
   .rsx {
+    width: 100%;
     height: 10%;
+    order: 1;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+  .rsx1 {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .css-button-shadow-border-sliding--red {
+    min-width: 50%;
+  }
+
+  .container-contact .coord, .container-contact .rsx {
+    margin-top: 15%;
+  }
+
+  .message {
+    height: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
