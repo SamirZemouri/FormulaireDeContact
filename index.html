@@ -46,24 +46,23 @@
 
 
         <div class="partie-formulaire">
+             <p class="send"></p>
+            <p id="erreur"></p>   
+
             
             <div class="container-form">
-                <form id="inscription" method="post" action="formulaire.php">
-                    <label for="nom" class="nom">Votre nom</label>
-                    <input type="text" id="nom" class="text-nom" name="nom" required >
-                    
+                <form id="inscription" method="post" >
+                    <label  class="nom">Votre nom</label>
+                    <input type="text" id="nom" class="text-nom" name="nom" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required >                    
                     
 
-                    <label for="mail" class="mail">Mail</label>
-                    <input type="email" id="mail" class="text-mail" name="mail" required>
+                    <label class="mail">Mail</label>
+                    <input type="email" id="mail" class="text-mail" name="mail" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" >
 
                     <label for="msg" >Message</label>
-                    <textarea class="message" id="msg" placeholder="Message..." name="message"></textarea>
-                    <div class="btn">
-                    <button type="submit" name="valider"  id="subbtn" class="css-button-shadow-border-sliding--red">Envoyer</button>
-                    </div>
-                    <p></p>
-                    <!-- <input type="submit" class="btn-envoyer " value="Envoyer"> -->
+                    <textarea class="message" id="msg" placeholder="Message..." name="message" maxlength="500"></textarea>
+                    <button type="submit" name="submit"  id="subbtn" class="css-button-shadow-border-sliding--red">Envoyer</button>
+
                 </form>
             </div>
         </div>
@@ -92,7 +91,7 @@
 
 
 
-        </div>
+
 
     </main>
     
@@ -116,7 +115,7 @@
 
 
 
-    <script src="Script/script.js"></script>
+    <script src="./Script/script.js"></script>
     <script src="https://kit.fontawesome.com/b0ca9b7f50.js" crossorigin="anonymous"></script>
 </body>
 </html>

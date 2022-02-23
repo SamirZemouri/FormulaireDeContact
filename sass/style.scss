@@ -45,6 +45,7 @@ main{
  i{
      font-size: 1.7em;
  }
+
  .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover{
      color:#F4620F;
 
@@ -65,7 +66,34 @@ main{
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-direction: column;
+ }
 
+.send{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #3abe3a;
+    border-radius: 18px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+ #erreur{
+     visibility: hidden;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: red;
+    border-radius: 18px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
  }
 
  .container-form{
@@ -77,6 +105,7 @@ main{
      justify-content: center;
      align-items: center;
  }
+
  .container-contact{
      width: 70%;
      height: 80%;
@@ -150,16 +179,16 @@ main{
 
 
  .text-nom{
-     background: url(/images/iconProfil.png) no-repeat scroll 3%;
+     background: url(../images/iconProfil.png) no-repeat scroll 3%;
  }
  .text-mail{
-     background: url(/images/iconMail.png) no-repeat 3%;
+     background: url(../images/iconMail.png) no-repeat 3%;
  }
 .text-nom:focus{
-    background: url(/images/iconProfilFocus.png) no-repeat 1.9%;
+    background: url(../images/iconProfilFocus.png) no-repeat 3%;
 }
 .text-mail:focus{
-    background: url(/images/iconMailFocus.png) no-repeat 3%;
+    background: url(../images/iconMailFocus.png) no-repeat 3%;
 }
  textarea{
      display: flex;
@@ -189,13 +218,6 @@ main{
      height: 30%;
  }
 
- .btn-envoyer{
-     color: white;
-     border-radius: 7px;
-     background-color: #F4620F;
-     border: none;
- }
-
 
   form button{
       width: 40%;
@@ -210,7 +232,7 @@ main{
 
   .css-button-shadow-border-sliding--red {
     color: #fff;
-    padding: 5px 10px;
+
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;

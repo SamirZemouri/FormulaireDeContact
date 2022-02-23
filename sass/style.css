@@ -70,6 +70,34 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.send {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #3abe3a;
+  border-radius: 18px;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#erreur {
+  visibility: hidden;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: red;
+  border-radius: 18px;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .container-form {
@@ -145,19 +173,19 @@ input[type=email] {
 }
 
 .text-nom {
-  background: url(/images/iconProfil.png) no-repeat scroll 3%;
+  background: url(../images/iconProfil.png) no-repeat scroll 3%;
 }
 
 .text-mail {
-  background: url(/images/iconMail.png) no-repeat 3%;
+  background: url(../images/iconMail.png) no-repeat 3%;
 }
 
 .text-nom:focus {
-  background: url(/images/iconProfilFocus.png) no-repeat 1.9%;
+  background: url(../images/iconProfilFocus.png) no-repeat 3%;
 }
 
 .text-mail:focus {
-  background: url(/images/iconMailFocus.png) no-repeat 3%;
+  background: url(../images/iconMailFocus.png) no-repeat 3%;
 }
 
 textarea {
@@ -188,13 +216,6 @@ label {
   height: 30%;
 }
 
-.btn-envoyer {
-  color: white;
-  border-radius: 7px;
-  background-color: #F4620F;
-  border: none;
-}
-
 form button {
   width: 40%;
   height: 9%;
@@ -207,7 +228,6 @@ form button {
 
 .css-button-shadow-border-sliding--red {
   color: #fff;
-  padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -330,7 +350,6 @@ form button {
   }
 
   .partie-formulaire {
-    align-items: baseline;
     width: 100%;
     height: 50%;
   }
@@ -348,10 +367,6 @@ form button {
   .message {
     height: 20%;
   }
-
-  .css-button-shadow-border-sliding--red {
-    min-width: 50%;
-  }
 }
 @media screen and (max-device-width: 900px) {
   main {
@@ -359,6 +374,19 @@ form button {
     height: 100%;
     align-items: center;
     border-radius: 0;
+  }
+
+  form {
+    height: 100%;
+    width: 80%;
+  }
+
+  label {
+    margin-top: 5%;
+  }
+
+  #erreur {
+    width: 40%;
   }
 
   .partie-contact {
@@ -388,8 +416,12 @@ form button {
     align-items: center;
   }
 
-  .css-button-shadow-border-sliding--red {
-    min-width: 50%;
+  .facebook, .twitter, .instagram {
+    visibility: hidden;
+  }
+
+  .hover-color-facebook, .hover-color-twitter, .hover-color-instagram {
+    visibility: hidden;
   }
 }
 @media screen and (max-device-width: 510px) {
@@ -404,6 +436,18 @@ form button {
     font-size: 2em;
   }
 
+  form {
+    height: 100%;
+  }
+
+  label {
+    margin-top: 3%;
+  }
+
+  #erreur {
+    width: 90%;
+  }
+
   .partie-contact {
     width: 70%;
     height: 40%;
@@ -415,7 +459,7 @@ form button {
   }
 
   .container-form {
-    width: 60%;
+    width: 90%;
     height: 100%;
   }
 
@@ -431,12 +475,12 @@ form button {
     align-items: center;
   }
 
-  .css-button-shadow-border-sliding--red {
-    min-width: 50%;
-  }
-
   .message {
     height: 25%;
+  }
+
+  .send {
+    width: 90%;
   }
 }
 @media screen and (max-device-width: 340px) {
@@ -462,7 +506,7 @@ form button {
   }
 
   .container-form {
-    width: 70%;
+    width: 90%;
     height: 100%;
   }
 
@@ -476,10 +520,6 @@ form button {
     height: 100%;
     justify-content: center;
     align-items: center;
-  }
-
-  .css-button-shadow-border-sliding--red {
-    min-width: 50%;
   }
 
   .container-contact .coord, .container-contact .rsx {
